@@ -1,5 +1,7 @@
 # habitat_suitability
 
+[![DOI](https://zenodo.org/badge/893246169.svg)](https://doi.org/10.5281/zenodo.14497285)
+
 In this project I will analyze the effect of climactic changes on the habitat of Sorghastrum grass species. Changing climate may have caused changes to soil health, temperature, precipitation, or other factors that may be changing the traditional range of species distribution for Sorghastrum. I will create a reproducible workflow to analyze whether this is the case, and to provide a template that can be used to aks the same question for different species.
 
 To run the code, begin with the first notebook (01_grassland_selection). If the study area is one of the grasslands from "grasslands_gdf", then the code should be able to be run as-is, only changing the NATIONALGR value in the code cells that define and plot the grassland boundaries. If study areas outside the grasslands_gdf are being used, additional changes will be required.
@@ -14,4 +16,4 @@ For future runs of notebook 04, it should be possible to change the variables in
 
 Notebook 05 contains an incomplete fuzzy logic model code. It's intended to create a suitability score raster composed of numbers between 1 and 0. This is different from the suitability score raster in notebook 06, in that it presents a range of decimals instead of an array of integer ones and zeroes. This notebook is incomplete, and likely won't run properly. For future studies, it may be possible to edit this and run it so that it completes correctly.
 
-Notebook 06
+Notebook 06 should be possible to run using "run all", although variables such as start_year, end_year, and others will need to be updated as new values are tested. Also, tolerance values and optimal growing conditions for the species in question will need to be updated. 
